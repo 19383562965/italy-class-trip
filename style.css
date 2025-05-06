@@ -2,10 +2,20 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(186, 224, 255);
 }
+body::selection {
+  background-color: rgb(16, 86, 151);
+  color: rgb(79, 175, 255);
+  background: rgba(255, 255, 255, 0.21);
+}
 h1 {
   font-size: 100px;
   text-align: center;
   color: rgb(16, 86, 151);
+}
+p {
+  font-size: 20px;
+  color: rgb(16, 86, 151);
+  width: 30%;
 }
 .nav-bar {
   display: flex;
@@ -47,6 +57,27 @@ h1 {
   margin-left: 10px;
   margin-right: 10px;
 }
+.info-box {
+  display: flex;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.info-text {
+  font-size: 20px;
+  color: rgb(16, 86, 151);
+  min-width: 400px;
+}
+.info-img {
+  width: 400px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 30px;
+}
 .btn-next-parent {
   display: flex;
   width: 100%;
@@ -61,10 +92,11 @@ h1 {
   font-size: 70px;
   background-color: rgb(16, 86, 151);
   text-decoration: none;
-  color: white;
+  color: rgb(222, 240, 255);
   border-radius: 50px;
   transition: 0.5s;
 }
 .btn-next:hover {
   transform: rotate(270deg) scale(1.5);
+  color: white;
 }
