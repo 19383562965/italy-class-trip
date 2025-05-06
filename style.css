@@ -27,9 +27,10 @@ h2 {
   cursor: default;
 }
 p {
-  font-size: 20px;
+  font-size: 30px;
   color: rgb(16, 86, 151);
-  width: 30%;
+  text-align: center;
+  margin-top: 0;
 }
 .nav-bar {
   display: flex;
@@ -96,6 +97,7 @@ p {
   font-size: 20px;
   color: rgb(16, 86, 151);
   min-width: 400px;
+  width: 30%;
 }
 .info-img {
   width: 400px;
@@ -133,13 +135,34 @@ p {
   z-index: 2;
 }
 /*highlights*/
-.highlights-parent {
+.highlights-section {
+  margin-top: 60px;
   display: flex;
   width: 100%;
   justify-content: center;
   flex-wrap: nowrap;
+  height: 500px;
 }
-.highlights-card {
+.highlights-card-left {
+  display: flex;
+  margin: 0;
+  background-color: white;
+  color: black;
+  width: 300px;
+  height: 400px;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.37);
+  margin-right: -50px;
+  transform: rotate(-5deg);
+  transition: 0.5s;
+}
+.highlights-card-left:hover {
+  z-index: 2;
+  transform: scale(1.1) rotate(0deg);
+}
+.highlights-card-center {
   margin: 0;
   background-color: white;
   color: black;
@@ -149,8 +172,15 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.37);
+  transform: rotate(2deg);
+  transition: 0.5s;
 }
-.highlights-card {
+.highlights-card-center:hover {
+  z-index: 2;
+  transform: scale(1.1) rotate(0deg);
+}
+.highlights-card-right {
   margin: 0;
   background-color: white;
   color: black;
@@ -160,17 +190,14 @@ p {
   justify-content: center;
   flex-wrap: wrap;
   border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.37);
+  margin-left: -50px;
+  transform: rotate(5deg);
+  transition: 0.5s;
 }
-.highlights-card {
-  margin: 0;
-  background-color: white;
-  color: black;
-  width: 300px;
-  height: 400px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  border-radius: 10px;
+.highlights-card-right:hover {
+  z-index: 2;
+  transform: scale(1.1) rotate(0deg);
 }
 .highlights-img {
   border-radius: 5px;
@@ -180,9 +207,19 @@ p {
   background-color: black;
 }
 .highlights-text {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  text-align: left;
   font-size: 30px;
   font-family: "Playwrite DK Loopet", cursive;
+}
+/*links*/
+.links-for-places {
+  background-color: rgb(6, 6, 116);
+  color: rgb(186, 224, 255);
+  border-radius: 10px;
+  padding: 2px;
+  text-decoration: none;
 }
 /*button next*/
 .btn-next-parent {
@@ -191,6 +228,7 @@ p {
   justify-content: center;
 }
 .btn-next {
+  margin: 50px;
   width: 100px;
   height: 100px;
   display: flex;
