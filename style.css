@@ -11,6 +11,20 @@ h1 {
   font-size: 100px;
   text-align: center;
   color: rgb(16, 86, 151);
+  margin-bottom: 0;
+  cursor: default;
+  transition: 0.5s;
+}
+h1:hover {
+  transform: scale(1.1) rotate(5deg);
+}
+h2 {
+  margin-top: 0;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(16, 86, 151);
+  padding: 0 330px;
+  cursor: default;
 }
 p {
   font-size: 20px;
@@ -39,16 +53,16 @@ p {
 }
 .nav-btn {
   text-decoration: none;
-  color: rgb(0, 108, 141);
+  color: rgb(255, 255, 255);
   width: 50px;
   height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #0c00961f;
+  background-color: #0c0096b4;
   text-align: center;
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 20px;
   font-weight: 600;
   transition: 0.2s;
 }
@@ -57,6 +71,17 @@ p {
   margin-left: 10px;
   margin-right: 10px;
 }
+/*Introduction*/
+.intro-img-parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.intro-img {
+  width: 400px;
+  border-radius: 20px;
+}
+/*Information*/
 .info-box {
   display: flex;
   width: 100%;
@@ -77,7 +102,89 @@ p {
   height: 300px;
   background: rgba(255, 255, 255, 0.21);
   border-radius: 30px;
+  transition: 1s;
+  cursor: crosshair;
+  object-fit: cover;
+  z-index: 1;
 }
+.info-img:hover {
+  border-radius: 20px;
+  transform: scale(1.1) rotate(-5deg);
+  z-index: 2;
+}
+.info-img:active {
+  border-radius: 20px;
+  transform: scale(1.2) rotate(0deg);
+}
+.info-map {
+  margin-left: -200px; 
+  transform: rotate(3deg); 
+  width: 400px;
+  height: 300px;
+  background: rgba(255, 255, 255, 0.21);
+  border-radius: 30px;
+  transition: 1s;
+  cursor: crosshair;
+  object-fit: cover;
+  z-index: 0;
+}
+.info-map:hover {
+  transform: rotate(5deg) scale(1.1);
+  z-index: 2;
+}
+/*highlights*/
+.highlights-parent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.highlights-card {
+  margin: 0;
+  background-color: white;
+  color: black;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.highlights-card {
+  margin: 0;
+  background-color: white;
+  color: black;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.highlights-card {
+  margin: 0;
+  background-color: white;
+  color: black;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  border-radius: 10px;
+}
+.highlights-img {
+  border-radius: 5px;
+  margin-top: 20px;
+  width: 270px;
+  height: 250px;
+  background-color: black;
+}
+.highlights-text {
+  text-align: center;
+  font-size: 30px;
+  font-family: "Playwrite DK Loopet", cursive;
+}
+/*button next*/
 .btn-next-parent {
   display: flex;
   width: 100%;
