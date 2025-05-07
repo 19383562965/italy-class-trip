@@ -71,6 +71,7 @@ p {
   transform: scale(1.2);
   margin-left: 10px;
   margin-right: 10px;
+  width: 70px;
 }
 /*Introduction*/
 .intro-img-parent {
@@ -86,7 +87,6 @@ p {
 .info-box {
   display: flex;
   width: 100%;
-  padding-left: 30px;
   padding-right: 30px;
   justify-content: center;
   align-items: center;
@@ -220,6 +220,11 @@ p {
   border-radius: 10px;
   padding: 2px;
   text-decoration: none;
+  transition: 0.15s;
+}
+.links-for-places:hover {
+  background-color: rgba(6, 6, 116, 0.705);
+  color: rgb(186, 224, 255);
 }
 /*button next*/
 .btn-next-parent {
@@ -244,4 +249,45 @@ p {
 .btn-next:hover {
   transform: rotate(270deg) scale(1.5);
   color: white;
+}
+/*Footer*/
+footer {
+  background-color: rgb(0, 0, 59);
+  bottom: 0;
+  left: 0;
+  margin-left: 0;
+  margin-bottom: 0;
+  width: 96%;
+  padding: 20px;
+  padding-left: 2%;
+  padding-right: 2%;
+  border-radius: 20px;
+}
+.footer-links-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: default;
+  color: rgb(16, 86, 151);
+  font-size: 50px;
+  transition: 0.2s;
+}
+.footer-links-parent:hover {
+  transform: scale(1.1);
+}
+.footer-links {
+  text-decoration: none;
+  color: rgb(16, 86, 151);
+  cursor: pointer;
+  transition: 0.5s;
+  margin: 0;
+}
+.footer-links:hover {
+  border-radius: 20px;
+  transform: scale(1.5);
+}
+.footer-links:active {
+  transition: 0.2s;
+  transform: scale(0.5);
 }
