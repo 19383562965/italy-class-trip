@@ -87,42 +87,46 @@ p {
 }
 #open-all-img:hover {
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1.1) rotate(-5deg);
 }
 .all-img-parent {
   position: fixed;
-  display: none;
+  display: flex;
   justify-content: center;
-  background-color: rgb(0, 0, 59);
+  background-color: rgba(0, 0, 59, 0.397);
   overflow: auto;
   flex-wrap: wrap;
   gap: 5px;
   z-index: 3;
-  width: 650px;
-  height: 450px;
-  right: -15px;
+  width: 1000px;
+  height: 700px;
+  right: -1000px;
   border-radius: 20px;
+  padding: 30px 0;
 }
 #close-all-img {
-  color: rgb(6, 6, 116);
-  background: rgba(255, 255, 255, 0.21);
+  margin-top: -30px;
+  width: 985px;
+  height: 50px;
+  color: rgb(134, 134, 255);
+  background: rgba(0, 0, 0, 0.507);
   position: fixed;
   font-size: 50px;
-  width: 630px;
-  transition: 1s;
+  transition: 0.2s;
   transform: rotate(180deg);
   margin-bottom: 0;
   cursor: pointer;
   z-index: 1;
-  height: 50px;
   border-radius: 20px;
 }
 #close-all-img:hover {
   backdrop-filter: blur(20px);
+  height: 90px;
+  font-size: 90px;
 }
 .all-img {
-  width: 200px;
-  height: 150px;
+  width: 300px;
+  height: 250px;
   object-fit: cover;
   transition: 0.15s;
 }
@@ -162,7 +166,6 @@ p {
   background: rgba(255, 255, 255, 0.21);
   border-radius: 30px;
   transition: 1s;
-  cursor: crosshair;
   object-fit: cover;
   z-index: 1;
 }
@@ -269,6 +272,50 @@ p {
   text-align: left;
   font-size: 30px;
   font-family: "Playwrite DK Loopet", cursive;
+}
+/*mini info*/
+.mini-info-parent {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  flex-wrap: wrap;
+  margin: 50px 0;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgb(194, 253, 255), rgb(119, 174, 255));
+}
+.mini-info-1X1 {
+  width: 300px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.103);
+  border-radius: 20px;
+  backdrop-filter: blur(0px);
+  transition: 0.2s;
+  opacity: 0.8;
+}
+.mini-info-1X1:hover {
+  backdrop-filter: blur(100px);
+  background-color: rgba(0, 0, 0, 0.103);
+  opacity: 1;
+  transform: scale(1.025);
+}
+.mini-info-2X1 {
+  width: 620px;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.103);
+  border-radius: 20px;
+  backdrop-filter: blur(0px);
+  transition: 0.2s;
+  opacity: 0.8;
+}
+.mini-info-2X1:hover {
+  backdrop-filter: blur(100px);
+  background-color: rgba(0, 0, 0, 0.103);
+  opacity: 1;
+  transform: scale(1.025);
 }
 /*links*/
 .links-for-places {
