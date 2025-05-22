@@ -295,6 +295,7 @@ p {
   backdrop-filter: blur(0px);
   transition: 0.2s;
   opacity: 0.8;
+  overflow: hidden;
 }
 .mini-info-1X1:hover {
   backdrop-filter: blur(100px);
@@ -310,6 +311,7 @@ p {
   backdrop-filter: blur(0px);
   transition: 0.2s;
   opacity: 0.8;
+  overflow: hidden;
 }
 .mini-info-2X1:hover {
   backdrop-filter: blur(100px);
