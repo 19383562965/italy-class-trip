@@ -277,7 +277,7 @@ p {
 .mini-info-parent {
   width: 60%;
   display: flex;
-  justify-content: center;
+  justify-content: center;  
   align-items: center;
   justify-self: center;
   flex-wrap: wrap;
@@ -285,7 +285,7 @@ p {
   padding: 20px;
   gap: 20px;
   border-radius: 30px;
-  background: linear-gradient(180deg, rgb(194, 253, 255), rgb(119, 174, 255));
+  background: linear-gradient(180deg, rgb(94, 190, 255), rgb(186, 224, 255));
 }
 .mini-info-1X1 {
   width: 300px;
