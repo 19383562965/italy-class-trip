@@ -275,7 +275,7 @@ p {
 }
 /*mini info*/
 .mini-info-parent {
-  width: 60%;
+  width: 940px;
   display: flex;
   justify-content: center;  
   align-items: center;
